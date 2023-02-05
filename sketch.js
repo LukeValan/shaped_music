@@ -8,6 +8,7 @@
 //Triangle:Note: "X position = the first X input"
 //Triangle:Note: "Y position = the first Y input"
 
+let cnv
 let shape_possibilities = ["circle","triangle","rectangle"];
 let vibeTypes = ["circle","line"]
 let vibes = []
@@ -24,7 +25,7 @@ let ampHistory = [];
 let goStop;
 
 function setup() {
-  createCanvas(800, 800);
+  cnv = createCanvas(800, 800);
   bgm = loadSound('assets/spectre.mp3', soundLoaded);
   amp = new p5.Amplitude()
 
